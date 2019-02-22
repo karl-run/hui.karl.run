@@ -1,6 +1,11 @@
 import faker from 'faker'
 
-const pick = (...args: any[]) => args[Math.round(Math.random() * args.length)]
+export const pick = <T>(...args: T[]): T => args[Math.round(Math.random() * args.length)]
+
+export const modSlice = <T>(values: T[], offset: number): T[] => [
+  ...values.slice(offset % values.length),
+  ...values.slice(0, offset % values.length),
+]
 
 const getFakerItem = () =>
   pick(faker.hacker.noun(), faker.hacker.verb(), faker.hacker.adjective(), faker.hacker.abbreviation())
