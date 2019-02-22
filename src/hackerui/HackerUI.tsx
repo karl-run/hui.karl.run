@@ -1,5 +1,20 @@
 import React from 'react'
 
-const HackerUI = () => <div>TODO</div>
+import GibberScroll from './modules/gibberscroll/GibberScroll'
 
-export default HackerUI;
+import css from './HackerUI.module.scss'
+
+console.log(css)
+
+const HackerUI = () => (
+  <div>
+    <h1>TODO</h1>
+    <div style={{ display: 'flex' }}>
+      <GibberScroll />
+      <GibberScroll />
+      <GibberScroll />
+    </div>
+  </div>
+)
+
+export default HackerUI
