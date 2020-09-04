@@ -13,7 +13,7 @@
     "react-spring": "^8.0.7"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.16.4",
     "typescript": "^3.3.3333"
   },
